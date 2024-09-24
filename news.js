@@ -1,4 +1,4 @@
-// Sample News Data for different categories
+
 const newsData = {
     stockMarket: [
         "Stock Market reaches an all-time high today!",
@@ -17,10 +17,10 @@ const newsData = {
     ]
 };
 
-// Function to handle navigation item clicks
+
 function onNavItemClick(category) {
     let newsContainer = document.querySelector('.bg-container');
-    newsContainer.innerHTML = ''; // Clear previous content
+    newsContainer.innerHTML = ''; 
 
     let selectedNews = newsData[category] || [];
 
@@ -37,11 +37,11 @@ function onNavItemClick(category) {
     });
 }
 
-// Function to handle search
+
 function searchNews() {
     let query = document.getElementById('search-text').value.toLowerCase();
     let newsContainer = document.querySelector('.bg-container');
-    newsContainer.innerHTML = ''; // Clear previous content
+    newsContainer.innerHTML = ''; 
 
     let allNews = [...newsData.stockMarket, ...newsData.weather, ...newsData.otherNews];
     let filteredNews = allNews.filter(news => news.toLowerCase().includes(query));
@@ -59,8 +59,14 @@ function searchNews() {
     });
 }
 
-// Event listener for search button
 document.getElementById('search-button').addEventListener('click', searchNews);
+
+
+function reload() {
+    document.getElementById('search-text').value = '';
+    onNavItemClick('stockMarket'); 
+}
+
 
 
 function reload() {
