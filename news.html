@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code'n surge news </title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="SJIT-LOGO">
+                <img src="logo.png" alt="404 NOT FOUND DATA NEWS" class="image">
+                <p class="hover-link nav-item" id="Stock Market" style="" onclick="onNavItemClick('ipl')">404 NOT FOUND DATA NEWS</p>
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="Stock Market" onclick="onNavItemClick('ipl')">Stock Market</li>
+                    <li class="hover-link nav-item" id="Weather update" onclick="onNavItemClick('finance')">Weather</li>
+                    <li class="hover-link nav-item" id="Other News" onclick="onNavItemClick('politics')">Other News</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Sports, politics, etc..">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    
+
+    <main>
+        <div class="bg-container">
+            <img 
+src="https://static.vecteezy.com/system/resources/thumbnails/013/704/508/original/world-map-background-news-studio-background-for-news-report-and-breaking-news-on-world-live-report-video.jpg" class="bg"/>
+        </div>
+    </main>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
