@@ -25,7 +25,7 @@ function onNavItemClick(category) {
     let selectedNews = newsData[category] || [];
 
     if (selectedNews.length === 0) {
-        newsContainer.innerHTML = URL("https://worldnewsapi.com/");
+        newsContainer.innerHTML = "<p> breaking news</p>";
         return;
     }
 
